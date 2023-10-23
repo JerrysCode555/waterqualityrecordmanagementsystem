@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Home</title>
-</head>
-<body>
+<?php include 'header.php' ?>
 
-<h1>Water Quality Record Management System</h1>
-     
-</body>
-</html>
+<?php include 'pages/login.php' ?>
+
+<?php include 'footer.php' ?>

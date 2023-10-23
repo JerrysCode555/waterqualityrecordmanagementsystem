@@ -1,0 +1,31 @@
+html{
+     padding: 0;
+     margin: 0;
+}
+
+/* Login Page */
+.bootstrap-card-login-form-wrap{
+     width: 100%;
+     height: 100vh;
+     position: relative;
+}
+.boostrap-card-wrap{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     width: 35%;
+     transform: translate(-50%, -50%);
+     z-index: 999; 
+}
+.bootstrap-card-login-form-wrap::after {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0,.7); /* Overlay color */
+}
+.bootstrap-card-login-form-wrap .boostrap-card-wrap .card-body{
+     padding: 50px auto !important;
+}
