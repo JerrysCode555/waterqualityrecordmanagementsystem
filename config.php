@@ -1,26 +1,14 @@
-<?php		
+<?php
 
-if ( !defined( 'ACCESS' ) ) {
-     echo '<script>
-               var userResponse = alert("Direct Access Not Allowed");
-               if (confirm("Click OK to proceed.")) {
-                    window.location.href = "index.php"; 
-               }     
-          </script>'; 
-} else {
-     
-     $servername = "localhost";
-     $username = "root";
-     $password = "";
-     
-     // Create connection
-     $conn = new mysqli($servername, $username, $password);
-     
-     // Check connection
-     if ($conn->connect_error) {
-       die("Connection failed: " . $conn->connect_error);
-     }else{
-          echo "Connected successfully";
-     }
+if( ! defined( 'ACCESS' ) ) die( 'DIRECT ACCESS NOT ALLOWED' );
 
-}
+define( 'DBHOST', 'localhost' );
+define( 'DBUSER', 'root' );
+define( 'DBPASS', '' );
+define( 'DBNAME', 'wqrms_db' );
+
+define( 'AUTH_ID', 'userid' );
+define( 'AUTH_NAME', 'lastname' );
+define( 'AUTH_TYPE', 'usertype' );
+
+//$restricted_pages = array( "users", "", "" );
